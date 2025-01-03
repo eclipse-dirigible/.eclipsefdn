@@ -6,7 +6,6 @@ orgs.newOrg('ecd.dirigible', 'eclipse-dirigible') {
     name: "Eclipse Dirigible™",
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
-      default_workflow_permissions: "read",
     },
   },
   _repositories+:: [
@@ -74,7 +73,6 @@ orgs.newOrg('ecd.dirigible', 'eclipse-dirigible') {
       delete_branch_on_merge: false,
       has_issues: false,
       has_wiki: false,
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
