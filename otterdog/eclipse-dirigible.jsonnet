@@ -11,7 +11,7 @@ orgs.newOrg('ecd.dirigible', 'eclipse-dirigible') {
   _repositories+:: [
     orgs.newRepo('dirigible') {
       allow_merge_commit: true,
-      allow_update_branch: false,
+      allow_update_branch: true,
       default_branch: "master",
       dependabot_security_updates_enabled: true,
       description: "Eclipse Dirigible™ Project",
@@ -64,9 +64,7 @@ orgs.newOrg('ecd.dirigible', 'eclipse-dirigible') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
-        "javascript",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       default_branch: "master",
